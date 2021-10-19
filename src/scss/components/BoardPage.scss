@@ -1,0 +1,211 @@
+input {
+  margin-top: 5px;
+  margin-left: 10px;
+  padding: 7px 12px;
+  font-size: 16px;
+  width: 370px;
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
+.board-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  transition: all .2s linear;
+  height: 100px;
+  width: 400px;
+  border: 5px solid #000;
+  border-radius: 5px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  p {
+    padding-left: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    text-wrap: normal;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &:hover {
+    background-color: #87CEEB;
+    border-radius: 10px;
+  }
+}
+
+.creating-list {
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .button-creating-list{
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 5px;
+    transition: all .2s linear;
+    &:hover {
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: #87CEEB;
+    }
+  }
+  .creating-list-window {
+    height: 150px;
+    width: 400px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    background-color: transparent;
+
+    .button-save-list {
+      margin-left: 10px;
+      margin-top: 10px;
+      padding: 10px 40px;
+      background-color: #fff;
+      color: #000;
+      border: 3px solid #000;
+      border-radius: 5px;
+      transition: all .2s linear;
+      &:hover {
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: #87CEEB;
+      }
+    }
+    .button-cancel {
+      margin-left: 90px;
+      padding: 10px 40px;
+      background-color: #fff;
+      color: #000;
+      border: 3px solid #000;
+      border-radius: 5px;
+      transition: all .2s linear;
+      &:hover {
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: #87CEEB;
+      }
+    }
+  }
+}
+
+.lists-block {
+  display: flex;
+  margin-left: 150px;
+  justify-content: flex-start;
+  align-items: center;
+  .button-delete {
+    padding: 5px 20px;
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 5px;
+    transition: all .2s linear;
+    &:hover {
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: #87CEEB;
+    }
+  }
+  .list-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 40px;
+    height: auto;
+    width: auto;
+
+    .list-buttons {
+      display: flex;
+    }
+
+    .button-add-card {
+      padding: 5px 20px;
+      background-color: #fff;
+      color: #000;
+      border: 3px solid #000;
+      border-radius: 5px;
+      transition: all .2s linear;
+      &:hover {
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: #87CEEB;
+      }
+    }
+
+    .card-creating-window {
+      .card-creating-input {
+        margin-top: 5px;
+        margin-left: 10px;
+        padding: 7px 12px;
+        font-size: 16px;
+        width: 170px;
+        border: 3px solid #000;
+        border-radius: 5px;
+      }
+      .button-card-create {
+        padding: 5px 20px;
+        background-color: #fff;
+        color: #000;
+        border: 3px solid #000;
+        border-radius: 5px;
+        transition: all .2s linear;
+        &:hover {
+          cursor: pointer;
+          border-radius: 10px;
+          background-color: #87CEEB;
+        }
+      }
+    }
+
+    .card-active {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 3px solid #000;
+      border-radius: 5px;
+      margin-right: 5px;
+      cursor: grab;
+
+      .card-title {
+        padding: 5px 10px;
+        font-size: 30px;
+      }
+      .cross-button {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+.lists-block-null {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  .list-name {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+.cards-block {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,131 @@
+.content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  .main-block {
+    margin-left: 150px;
+    .creating-board {
+      height: 200px;
+      width: 400px;
+      border: 3px solid #000;
+      border-radius: 5px;
+      background-color: transparent;
+
+      p {
+        margin-left: 80px;
+        font-size: 27px;
+        padding-top: 10px;
+        padding-left: 20px;
+        font-weight: 600;
+      }
+
+      input {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 7px 12px;
+        font-size: 16px;
+        width: 370px;
+        border: 3px solid #000;
+        border-radius: 5px;
+        
+      }
+      .button-save {
+        margin-left: 10px;
+        margin-top: 10px;
+        padding: 10px 40px;
+        background-color: #fff;
+        color: #000;
+        border: 3px solid #000;
+        border-radius: 5px;
+        transition: all .2s linear;
+        &:hover {
+          cursor: pointer;
+          border-radius: 10px;
+          background-color: #87CEEB;
+        }
+      }
+      .button-cancel {
+        margin-left: 90px;
+        padding: 10px 40px;
+        background-color: #fff;
+        color: #000;
+        border: 3px solid #000;
+        border-radius: 5px;
+        transition: all .2s linear;
+        &:hover {
+          cursor: pointer;
+          border-radius: 10px;
+          background-color: #87CEEB;
+        }
+      }
+    }
+
+    .main-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .2s linear;
+      height: 100px;
+      width: 400px;
+      border: 5px solid #000;
+      border-radius: 5px;
+      position: relative;
+      background-color: transparent;
+      cursor: pointer;
+      p {
+        font-size: 40px;
+        font-weight: 700;
+        color: #000;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &:hover {
+        background-color: #87CEEB;
+        border-radius: 10px;
+      }
+    }
+  }
+  .board-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+    margin-bottom: 10px;
+    transition: all .2s linear;
+    height: 100px;
+    width: 400px;
+    border: 5px solid #000;
+    border-radius: 5px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    p {
+      padding-left: 10px;
+      font-size: 40px;
+      font-weight: 700;
+      color: #000;
+      text-wrap: normal;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &:hover {
+      background-color: #87CEEB;
+      border-radius: 10px;
+    }
+  }
+  .boards-block-null {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+    border: 5px solid #000;
+    border-radius: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 150px;
+  }
+}

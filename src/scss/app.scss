@@ -1,0 +1,19 @@
+@import './normalize';
+@import './components/MainPage';
+@import './components/BoardPage';
+
+.block-smile {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  height: 75px;
+  width: 75px;
+  .smile {
+    border: 3px solid #000;
+    border-radius: 15px;
+    display: block;
+    background: url('../img/smile.png') center;
+    height: 65px;
+    width: 65px;
+  }
+}
